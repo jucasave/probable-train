@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Colchocap</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header class="header">
+
+    <div class="menu container" id="inicio">
+          <a href="#" class="logo">Colchocap</a>
+          <input type="checkbox" id="menu" />
+          <label for="menu">
+            <img src="imagenes/logocolchocap.png" class="menu-icono" alt="menu">
+          </label>
+          <nav class="navbar">
+            <ul>
+                <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">inicio</a></li>
+                <li><a href="#lista-1"  onclick="seleccionar(this)">Productos</a></li>
+                <li><a href="hhttp://127.0.0.1:5500/portafolio/index.html">Contacto</a></li>
+            </ul>
+            <ul class="modo-oscuro">
+                <li class="switch">
+                    <i class='bx bxs-sun' ></i>
+                    <i class='bx bxs-moon' ></i>
+                </li> 
+            </ul>
+          </nav>
+          <div>
+            <ul>
+                <li class="submenu">
+                   <img  id="img-carrito" src="imagenes/car.svg" alt="car">
+                    <div id="carrito">
+                        <table id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                </tr>
+                            </thead>
+                            <tbody> 
+
+                            </tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+                    </div>
+                </li>
+            </ul>
+          </div>
+    </div>
+    
+<div class="header-content container" >
+    <div class="header-txt">
+     <span>Bienvenido a Colchocap!!</span>
+     <h1>Tenemos super ofertas para ti!!</h1>  
+     <p>
+        Hola querido usuario, Bienvenido a colchocap, por motivos de inaguracion
+        tenemos ofertas especiales para todos nuestros productos.
+                   Aprovecha hijo de re-mil ;) 
+     </p>
+     <div class="butons">
+        <a href="#ofertas" class="btn-1" onclick="seleccionar(this)" >ofertas</a>
+        <a href="#lista-1" class="btn-1"onclick="seleccionar(this)" >Productos</a>
+     </div>
+    </div>
+    <div class="header-img">
+        <img src="imagenes/gorromenu.png" alt="">
+    </div>
+</div>
+
+</header>
+
+<div class="food">  
+
+<section class="oferts container" id="ofertas">
+
+    <div class="ofert-1 b1">
+        <div class="ofert-txt">
+           <h3>Gorra plana en DESCUENTO!!!!</h3>
+           <a href="#lista-1" onclick="seleccionar(this)" >Productos</a>
+        </div>
+        <div class="ofert-img">
+            <img src="imagenes/gorraplana.png" alt="">
+
+        </div>
+    </div>
+    
+    <div class="ofert-1 b2">
+        <div class="ofert-txt">
+           <h3>Gorro con pompones en HIPERDESCUENTO!!!</h3>
+           <a href="#lista-1" onclick="seleccionar(this)" >Productos</a>
+        </div>
+        <div class="ofert-img">
+            <img src="imagenes/gorropompon.png" alt="">
+
+        </div>
+    </div>
+    
+    <div class="ofert-1 b3">
+        <div class="ofert-txt">
+           <h3>Gorro de lana ESTE SI ESTA A PRECIO NORMAL!!!!</h3>
+           <a href="#lista-1" onclick="seleccionar(this)" >Productos</a>
+        </div>
+        <div class="ofert-img">
+            <img src="imagenes/gorralana.png" alt="">
+
+        </div>
+    </div>
+
+  </section>
+ </div>
+
+ <div class="food">  
+
+<main class="product container">
+    
+    <h2>GORROS Y GORRAS</h2>
+    
+    <div class="box-container" id="lista-1" >
+      
+        <div class="box">
+            <img src="imagenes/gorracorona.png" alt="">
+            <div class="product-txt">
+                <h3>Gorra corona</h3>
+                <p>Calidad-precio</p>
+                <p class="precio">$200</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="1">
+                Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="imagenes/gorracurva.png" alt="">
+            <div class="product-txt">
+                <h3>Gorra curva</h3>
+                <p>Perfecta para el sol!!</p>
+                <p class="precio">$150</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="2">
+                Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="imagenes/gorraplana.png" alt="">
+            <div class="product-txt">
+                <h3>Gorra plana</h3>
+                <p>NO ahi comentarios</p>
+                <p class="precio">$150</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="3">
+                Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="imagenes/strapback.png" alt="">
+            <div class="product-txt">
+                <h3>gorra estilo strapback</h3>
+                <p>Mantiene ventilado tu pelo</p>
+                <p class="precio">$150</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="4">
+                Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="imagenes/coparedonda.png" alt="">
+            <div class="product-txt">
+                <h3>gorro de copa redonda</h3>
+                <p>fino señores</p>
+                <p class="precio">$250</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="5">
+                Agregar al carrito</a>
+            </div>
+        </div>
+    
+        <div class="box">
+            <img src="imagenes/copapartida.png" alt="">
+            <div class="product-txt">
+                <h3>gorro de copa partida</h3>
+                <p>Estilo vaquero</p>
+                <p class="precio">$250</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="6">
+                Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="imagenes/gorropompon.png" alt="">
+            <div class="product-txt">
+                <h3>gorro con pompon</h3>
+                <p>Super calientito</p>
+                <p class="precio">$100</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="7">
+                Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="imagenes/gorrodelana.png" alt="">
+            <div class="product-txt">
+                <h3>gorro de lana</h3>
+                <p>caliente y estetico</p>
+                <p class="precio">$150</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="8">
+                Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="imagenes/Beanie.png" alt="">
+            <div class="product-txt">
+                <h3>gorro beanie</h3>
+                <p>A</p>
+                <p class="precio">$150</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="9">
+                Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="imagenes/hipster.png" alt="">
+            <div class="product-txt">
+                <h3>gorro estilo hipster</h3>
+                <p>despierta tu lado mamador</p>
+                <p class="precio">$150</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="10">
+                Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="imagenes/gotadeagua.png" alt="">
+            <div class="product-txt">
+                <h3>sombrero tipo gota de agua</h3>
+                <p>No se que decir sinceramente</p>
+                <p class="precio">$200</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="11">
+                Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="imagenes/estilopescador.png" alt="">
+            <div class="product-txt">
+                <h3>sombrero de cubo</h3>
+                <p>su nombre me recuerda a un guitarrista</p>
+                <p class="precio">$150</p>
+                <a href="#" class="agregar-carrito btn-3" data-id="12">
+                Agregar al carrito</a>
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="btn-2" id="load-more">Cargar Mas</div>
+</main>
+
+</div>
+ 
+<div class="food"> 
+
+<section class="testimonial container">
+    <span>Testimoniales</span>
+    <h2>que opinan nustra clientela?</h2>
+    <div class="testimonial-content">
+        <div class="testimonial-1">
+            <p>
+               Buenos precios, de verdad, nunca abia visto tantos 
+               descuentos juntos, la verdad una ganga
+            </p>
+            <img src="imagenes/5 estrellas.png" alt="">
+            <h4>Marco Cortez</h4>
+         </div>
+         <div class="testimonial-1">
+            <p>
+                Buena pagina, el unico problema es que no ahi
+                gorras o gorros de marca, pero es compresible
+                va iniciando, 4 de 10 :)
+            </p>
+            <img src="imagenes/4 estrellas.png" alt="">
+            <h4>Raul Cazas</h4>
+        </div>
+        <div class="testimonial-1">
+            <p>
+               Buenos descuentos y Calidad-precio, el envio fue rapido
+               y me llego sin maltratar, para ser nueva la pagina 
+               esta muy bien 
+            </p>
+            <img src="imagenes/5 estrellas.png" alt="">
+            <h4>Lilia Mrtines</h4>
+         </div>
+         <div class="testimonial-1">
+            <p>
+                buen servicio al cliente, el paquete llego algo maltratado
+                es comprencible, vivo en tamaulipas, 5 de 5 
+            </p>
+            <img src="imagenes/5 estrellas.png" alt="">
+            <h4>Tu papi hdpt jajaja</h4>
+        </div>
+
+    </div>
+</section>
+
+</div>
+
+
+<footer class="footer">
+    <div class="footer-content container">
+        <div class="link">
+            <h3>Redes sociales</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/carlossaavedra_jv/">Instagram</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100076334268624">Facebook</a></li>
+                <li><a href="https://www.threads.net/@carlossaavedra_jv">Threads</a></li>
+                <li><a href="https://wa.me/525534019300">Whatsapp</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>Mas paginas</h3>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/pirata/index.html">piratas</a></li>
+                <li><a href="http://127.0.0.1:5500/pagwebantiacoso/pag.html">anti acoso escolar</a></li>
+                <li><a href="https://www.facebook.com/colchonspizza">colchospizza</a></li>
+                <li><a href="https://i.pinimg.com/236x/ba/ce/4f/bace4f3968fbd9dc8899823d6ae29ef7.jpg">shhhhhh</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <h3>paginas recomendadas</h3>
+            <ul>
+                <li><a href="https://thepiratebay.org/index.html">The pirate bay</a></li>
+                <li><a href="https://www.didi-food.com/es-MX/food/">Didi food</a></li>
+                <li><a href="https://www.dominos.com.mx/pages/order/?route=1#!/locations/search/">Dominos Pizza</a></li>
+                <li><a href="https://www.ncl.com.mx/?CID=PS_DIG_NA_LFEXP_GOO_NA_NA_WHYNCL_NA_NA_LAT&gad_source=1&gclid=CjwKCAjwuJ2xBhA3EiwAMVjkVLL0pNWShHuQQXcKkNKSuPR33GDCU2MKdT6Xr0ANy69Yuqd44uA0cxoCqrMQAvD_BwE&gclsrc=aw.ds">Cruceros - Reserva Ahora</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
+
+<script src="script2.js"></script>
+
+</body>
+</html>
