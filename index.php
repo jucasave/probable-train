@@ -28,7 +28,7 @@
             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="http://127.0.0.1:5500/portafolio/index.html#portfolio">Portafolio</a>
+            <a class="nav-link" href="index.html">Portafolio</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
