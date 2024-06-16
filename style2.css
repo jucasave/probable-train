@@ -361,7 +361,7 @@ span {
     color: hsl(125, 100%, 67%);
 }
 
-@media (max-width:991px) {
+@media (max-width:800px) {
     
     .menu {
         padding: 20px;
