@@ -374,7 +374,7 @@ body.active .link ul li a:hover{
     color: #ff9305;
 }
 
-@media (max-width:991px) {
+@media (max-width:800px) {
     
     .menu {
         padding: 20px;
